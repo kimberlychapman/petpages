@@ -1381,6 +1381,15 @@ section.quality_ser_bg {
 	z-index: 0;
 }
 
+#build_dog{
+	margin-left:-25px;
+}
+#dog-space{
+	margin-left:-25px;
+}
+#good{
+	margin-top:-25px;
+}
 .qulity_ser {
 	background: rgba(0, 0, 0, 0.1);
 	margin-bottom: 30px;
