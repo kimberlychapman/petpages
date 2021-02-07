@@ -1382,13 +1382,16 @@ section.quality_ser_bg {
 }
 
 #build_dog{
-	margin-left:-35px;
+	margin-left:-5%;
+	margin-top:2.5%;
 }
 #dog-space{
-	margin-left:-35px;
+	margin-top:1%;
+	margin-left:-1%;
 }
 #good{
-	margin-top:-35px;
+	margin-top:-7%;
+	margin-left:5%;
 }
 .qulity_ser {
 	background: rgba(0, 0, 0, 0.1);
