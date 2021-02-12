@@ -1382,19 +1382,20 @@ section.quality_ser_bg {
 }
 
 #build_dog{
-	margin-left:-1%;
-	margin-top:3%;
+	margin-left:-4%;
+	margin-top:6%;
 }
 #dog-space{
-	margin-top:3%;
-	margin-left:-1%;
+	margin-top:1%;
+	margin-left:-7%;
 }
 #good{
-	margin-top:3%;
+	margin-top:-1%;
 	/* margin-left:5%; */
 }
 #user{
 	margin-top:3%;
+	left:-2%;
 }
 .qulity_ser {
 	background: rgba(0, 0, 0, 0.1);
