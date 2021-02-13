@@ -6,7 +6,9 @@
     Website: https://showwp.com
     Version: 1.0
 /*******************************************/
-
+html, body{
+    overflow-y: hidden;
+}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -21,7 +23,7 @@
     height: 100%;
 	border-color:#fff;
     margin-left: -270px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     overflow-x: hidden;
     background-color: #4E53A5;
     box-shadow: -20px 0 50px 0 rgba(0, 0, 0, 0.4);
@@ -36,8 +38,38 @@
 #page-content-wrapper {
     width: 100%;
     padding-top: 0;
-    background-color:#68BBE5;
+    background-color: #48494a;
 }
+#the-header{
+    position:absolute;
+    top:0px;
+    left:100px;
+    width:100%;
+    height:80px;
+    background-color: #68BBE5;
+    /* display:flex;
+    flex-direction: row; */
+    font-size: 20pt;
+    color: black;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    padding-top:15px;
+    padding-left:200px;
+}
+#css-part{
+    margin-left:300px;
+    /* border:solid 2px magenta; */
+    /* width:100px; */
+    /* height:50px; */
+    color:black;
+    /* font-size:20pt; */
+}
+/* #html-piece{
+    position:absolute;
+    font-size:16pt;
+    color:black;
+    
+} */
 
 /*-------------------------------*/
 /*     Sidebar nav styles        */
@@ -110,6 +142,10 @@
     border: none;
     background-color: #222;
     box-shadow: none;
+}
+#pet-html{
+    font-size:18pt;
+    color:black;
 }
 #blank-body,
 #blank-ears,
@@ -193,7 +229,7 @@
 .hamburger .hamb-top,
 .hamburger .hamb-middle,
 .hamburger .hamb-bottom {
-    background-color: #fff;
+    background-color: black;
 }
 .hamburger .hamb-top {
     top: 5px;
@@ -218,7 +254,7 @@
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
 .hamburger.is-open .hamb-bottom {
-    background-color: #fff;
+    background-color: black;
 }
 .hamburger.is-open:before {
     content: '';
@@ -240,6 +276,144 @@
 }
 .logo {
     padding: 60px 25px 40px;
+}
+#pet-css{
+    position:absolute;
+    top:81px;
+    left:15%;
+    height:900px;
+    width:300px;
+    border:black;
+    background-color:#48494a;
+    color:#4E53A5;
+    font-size: 12pt;
+}
+#pet-part{
+    color:white;
+    /* font-weight:bold; */
+    font-size: 16pt;
+    margin-left:10px;
+    /* margin-top:10px; */
+}
+#pet-body{
+    margin-top:10px;
+    height:135px;
+    width: 170px;
+    /* border:solid 2px magenta; */
+    display:flex;
+    flex-direction: column;
+}
+
+#pet-ears,
+#pet-nose,
+#pet-tail,
+#pet-spots{
+    height:110px;
+    width: 170px;
+    background-color: lime;
+    /* border:solid 2px magenta; */
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+}
+#pet-collar{
+    height:90px;
+    width: 170px;
+    background-color: blueviolet;
+    /* border:solid 2px magenta; */
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+}
+#pet-body{
+    background-color: magenta;
+}
+#pet-nose{
+    background-color: aqua;
+}
+#pet-tail{
+    background-color: yellow;
+}
+#pet-spots{
+    background-color: red;
+}
+
+/* #pet-tail{
+    height:120px;
+    width: 170px;
+    /* border:solid 2px magenta; */
+    /* display:flex;
+    flex-direction: column;
+    margin-top:-7px;
+} */ 
+
+#pet-body-title,
+#body-end,
+#pet-ears-title,
+#pet-nose-title,
+#pet-tail-title,
+#pet-spots-title,
+#pet-collar-title{
+    color:black;
+    font-weight:bold;
+    font-size: 12pt;
+    margin-left:10px;
+    margin-top:5px;
+}
+/* #pet-ears-title{
+    color:yellow;
+}
+#pet-nose-title{
+    color: magenta;
+}
+#pet-tail-title{
+    color: lime;
+} */
+#body-type,
+#body-size,
+#body-color,
+#ear-type,
+#ear-color,
+#nose-type,
+#nose-color,
+#tail-type,
+#tail-color,
+#spot-type,
+#spot-color,
+#collar-color{
+    color:black;
+    font-size:12pt;
+    margin-left:30px;
+}
+#my-type,
+#my-size,
+#my-color,
+#my-ear-type,
+#my-ear-color,
+#my-nose-type,
+#my-nose-color,
+#my-tail-type,
+#my-tail-color,
+#my-spot-type,
+#my-spot-color,
+#my-collar-color{
+color:transparent;
+}
+#semi-colon1,
+#semi-colon2,
+#semi-colon3,
+#semi-colon4,
+#semi-colon5,
+#semi-colon6,
+#semi-colon7,
+#semi-colon8,
+#semi-colon9,
+#semi-colon10,
+#semi-colon11,
+#semi-colon12
+{
+    color:transparent;
+    font-weight: bold;
 }
 /*-------------------------------*/
 /*            Overlay            */
