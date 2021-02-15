@@ -56,31 +56,38 @@
             <ul class="nav sidebar-nav">
                <li id="pet-html">&#60;html&#62;</li>
                <!-- <li class="active"><a id="link1" class="nav-section1" href="#all"><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i> All</a></li> -->
-               <li><a id="link2" class="nav-section2" href="">
-                  <img id="blank-body" src="images/body_css.png"> Body
-               </a></li>
-               <li><a id="link3" class="nav-section3" href="">
-                  <img id="blank-ears" src="images/ears_css.png"> Ears
-               </a></li>
-               <li><a id="link4" class="nav-section4" href="">
+               <li id="link2" class="nav-section2">
+                  <img id="blank-body" src="images/body_css.png" onclick="showBody()"> Body
+               </li>
+               <li id="link3" class="nav-section3" href="">
+                  <img id="blank-ears" src="images/ears_css.png" onclick="showEars()"> Ears
+               </li>
+               <li id="link4" class="nav-section4" href="">
                   <img id="blank-nose" src="images/nose_css.png"> Nose
-               </a></li>
-               <li><a id="link5" class="nav-section5" href="">
+               </li>
+               <li id="link5" class="nav-section5" href="">
                   <img id="blank-tail" src="images/tail_css.png"> Tail
-               </a></li>
-               <li><a id="link6" class="nav-section6" href="">
+               </li>
+               <li id="link6" class="nav-section6" href="">
                   <img id="blank-spots" src="images/spots_css.png"> Spots
-               </a></li>
-               <li><a id="link7" class="nav-section7" href="">
+               </li>
+               <li id="link7" class="nav-section7" href="">
                   <img id="blank-collar" src="images/collar_css.png"> Collar
-               </a></li>
+               </li>
                <li id="pet-html">&#60;/html&#62;</li>
             </ul>
          </nav>
          <div id="the-header">
             <div class="css-part">stylesheet</div>
          </div>
-
+         <script>
+            function showBody(){
+               document.getElementById('the-body').style.display="flex";    }
+         </script>
+            <script>
+               function showEars(){
+                  document.getElementById('the-ears').style.display="flex";    }
+            </script>
          
          <div id="pet-css">
             <!-- <div id="pet-part">&#60;style&#62;</div> -->
@@ -121,19 +128,10 @@
                   <div id="body-end">}</div>
             </div>
          </div>
-         
-         
-         <!-- <div id="the-body">
-            <div id="body-x">x</div>
-            <div id="dog-body-type">
-               <img id="dbt" src="images/body-type.png">
-            </div>
-         </div> -->
          <a id="back-home" href="index.html">
             <img id="go-home" src="images/earth_dottat.png">
          </a>
-         <!-- <button id="test-button" onclick="showTestImage()">Testing</button>
-         <div id="test-pic"><img id="test-image" src="images/favicon.ico"></div> -->
+
       
          <!-- /#sidebar-wrapper -->
          <!-- Page Content -->
@@ -165,570 +163,15 @@
                        </div>
 
                      </div>
-                        <!-- home pages --> 
-						<!-- <h2 style="display:none">heading</h2>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01.jpg" alt="#" />
-                              </div>
-							   <div class="feature_info">
-                                 <a href="index.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-04.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_4.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-05.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_5.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- secvice -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-service-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="service.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-sevice-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="service_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-sevice-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="service_page_3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- pages -->
-						<!-- about us pages -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-about-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="about_page_1.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-about-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="about_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- team pages -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-team-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="team_page_1.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-team-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="team_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- blog detail -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-detail.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_detail.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- 404 error -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-404.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="page_404_1.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- blog -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-04.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page4.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-05.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page5.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- case studies -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies_page_3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-04.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies_page_4.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- shop -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-shop.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="shop.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- contact -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-contact-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="contact.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-contact-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="contact_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-					 <!-- </article>
-					 <article id="home"> -->
-					    <!-- home pages --> 
-						<!-- <h2 style="display:none">heading</h2>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01.jpg" alt="#" />
-                              </div>
-							   <div class="feature_info">
-                                 <a href="index.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-04.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_4.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-05.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="home_page_5.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-					 <!-- </article>
-					 <article id="service">
-					    <h2 style="display:none;">heading</h2> -->
-					    <!-- secvice -->
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-service-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="service.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-sevice-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="service_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-sevice-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="service_page_3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-					 </article>
-					 <article id="pages">
-					    <h2 style="display:none">heading</h2> -->
-					    <!-- pages -->
-						<!-- about us pages -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-about-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="about_page_1.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-about-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="about_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- team pages -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-team-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="team_page_1.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-team-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="team_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- blog detail -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-detail.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_detail.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- 404 error -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-404.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="page_404_1.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-					 </article>
-					 <article id="blog">
-					    <h2 style="display:none;">heading</h2> -->
-					    <!-- blog -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-04.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page4.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-blog-05.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="blog_page5.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-					 </article>
-					 <article id="case_studies">
-					    <h2 style="display:none;">heading</h2> -->
-					    <!-- case studies -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-03.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies_page_3.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-cast-04.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="case_studies_page_4.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
+             
 					 </article>
 					 <article id="shop">
 					    <h2 style="display:none;">heading</h2>
-					    <!-- shop -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-shop.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="shop.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
+
 					 </article>
 					 <article id="contact">
 					    <h2 style="display:none;">heading</h2>
-					    <!-- contact -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-contact-01.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="contact.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
-						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="2s" >
-                           <div class="feature_box">
-                              <div class="feature_img_theme_pr">
-                                 <img class="img-responsive" src="images/landing_page/seo-01-contact-02.jpg" alt="#" />
-                              </div>
-                              <div class="feature_info">
-                                 <a href="contact_page_2.html" class="visit_web"><i class="fa fa-external-link-square"></i> View Demo</a>
-                              </div>
-                           </div>
-                        </div> -->
+				
 					 </article>
                   </div>
                </div>
@@ -736,6 +179,45 @@
          </div>
          <!-- /#page-content-wrapper -->
       </div>
+      <div id="the-body">
+         <div id="body-x" onclick="hideBody()">x</div>
+         <div id="dog-body-type">
+            <img id="dbt" src="images/body-type.png">
+         </div>
+         <div id="dog-body-size">
+            <img id="dbs" src="images/body-size.png">
+         </div>
+         <div id="dog-body-color">
+            <img id="dbc" src="images/color.png">
+         </div>
+      </div>
+      <div id="the-ears">
+         <div id="ears-x" onclick="hideEars()">x</div>
+         <div id="dog-ear-type">
+            <img id="det" src="images/dog-ear-type.png">
+         </div>
+         <div id="dog-ear-color">
+            <img id="dec" src="images/color.png">
+         </div>
+      </div>
+      <script>
+         function hideBody(){
+            document.getElementById('the-body').style.display="none";
+         }
+      </script>
+
+      <script>
+         function hideEars(){
+            document.getElementById('the-ears').style.display="none";
+         }
+      </script>
+      <!-- <button id="test-button" onclick="showTestImage()">Testing</button>
+      <div id="test-pic"><img id="test-image" src="images/favicon.ico"></div> -->
+      <script>
+         function showTestImage(){
+            document.getElementById('test-pic').style.display="block";
+         }
+      </script>
       <!-- <script src="otherfunctions.js"></script> -->
       <!-- /#wrapper -->	 
       <!-- jQuery (necessary for Bootstrap's JavaScript) -->

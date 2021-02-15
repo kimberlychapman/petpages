@@ -110,7 +110,14 @@ html, body{
     color: #fff;
     background-color: #632e62;
 }
-.sidebar-nav li a {
+.sidebar-nav li a,
+#link2, 
+#link3,
+#link4,
+#link5, 
+#link6,
+#link7
+ {
     display: block;
     color: black;
     text-decoration: none;
@@ -123,6 +130,24 @@ html, body{
 .sidebar-nav li a:hover,
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus,
+#link2:hover,
+#link2:active,
+#link2:focus,
+#link3:hover,
+#link3:active,
+#link3:focus,
+#link4:hover,
+#link4:active,
+#link4:focus,
+#link5:hover,
+#link5:active,
+#link5:focus,
+#link6:hover,
+#link6:active,
+#link6:focus,
+#link7:hover,
+#link7:active,
+#link7:focus,
 .sidebar-nav li.open a:hover,
 .sidebar-nav li.open a:active,
 .sidebar-nav li.open a:focus {
@@ -441,7 +466,8 @@ color:black;
     color:black;
     font-weight: bold;
 }
-#body-x{
+#body-x,
+#ears-x{
     font-size:16pt;
     text-align-last: right;
     color:black;
@@ -456,13 +482,27 @@ color:black;
 #the-body{
     display:none;
     position:absolute;
-    top:90px;
-    left:455px;
-    height:81.5%;
+    top:85px;
+    left:470px;
+    height:83.25%;
     width:200px;
     background-color: white;
-    display:flex;
+    /* display:flex; */
     flex-direction: column;
+    z-index: 1;
+}
+#the-ears{
+    display:none;
+    position: absolute;
+    top:240px;
+    left:470px;
+    height:50%;
+    width:200px;
+    background-color: white;
+    /* display:flex; */
+    flex-direction: column;
+    z-index: 1;
+    border: 2px solid black;
 }
 #dog-body-type{
     /* margin-top:100px; */
@@ -470,10 +510,43 @@ color:black;
     width:200px;
     border:2px solid black;
 }
+#dog-ear-type{
+    height:200px;
+    width:200px;
+    border-top:solid 2px black;
+}
 #dbt{
-    height:270px;
-    width:170px;
+    height:250px;
+    width:180px;
     margin-left:10px;
+}
+#det{
+    height:200px;
+    width:180px;
+    margin-left:10px;
+}
+
+#dog-body-color,
+#dog-ear-color{
+    height:205px;
+    width:200px;
+    /* border:2px solid black; */
+}
+#dbc,
+#dec{
+    height:200px;
+    width:190px;
+    /* margin-left:10px; */
+}
+#dog-body-size{
+    height:205px;
+    width:200px;
+    border:2px solid black;
+}
+#dbs{
+    height:200px;
+    width:198px;
+    /* margin-left:10px; */
 }
 /*-------------------------------*/
 /*            Overlay            */
