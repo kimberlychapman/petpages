@@ -304,10 +304,20 @@ html, body{
 .logo {
     padding: 60px 25px 40px;
 }
-#pet-css{
+.run-code{
+    display:flex;
+    flex: row;
+    /* border:solid 3px magenta; */
     position:absolute;
     top:81px;
-    left:15%;
+    left:0px;
+    height:100%;
+    width:100%;
+}
+#pet-css{
+    /* position:absolute;
+    top:81px;
+    left:0%; */
     height:900px;
     width:300px;
     border:black;
@@ -316,6 +326,11 @@ html, body{
     font-size: 12pt;
     padding-left:20px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    margin-top:10px;
+    margin-right:20px;
     /* text-align: left; */
 }
 #pet-part{
@@ -482,8 +497,8 @@ color:black;
 #the-body{
     display:none;
     position:absolute;
-    top:85px;
-    left:470px;
+    top:100px;
+    left:280px;
     height:83.25%;
     width:200px;
     background-color: white;
@@ -494,8 +509,8 @@ color:black;
 #the-ears{
     display:none;
     position: absolute;
-    top:240px;
-    left:470px;
+    top:245px;
+    left:280px;
     height:50%;
     width:200px;
     background-color: white;
@@ -508,7 +523,8 @@ color:black;
     /* margin-top:100px; */
     height:275px;
     width:200px;
-    border:2px solid black;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
 }
 #dog-ear-type{
     height:200px;
@@ -541,7 +557,7 @@ color:black;
 #dog-body-size{
     height:205px;
     width:200px;
-    border:2px solid black;
+    border-bottom:2px solid black;
 }
 #dbs{
     height:200px;
@@ -711,17 +727,17 @@ article {
     height:500px;
     width:600px;
     /* border: 2px solid magenta; */
-    margin-left:350px;
-    margin-top:125px;
+    margin-left:200px;
+    margin-top:160px;
   }
   #dog-pic{
     height:450px;
     width:550px;
   }
   #starshine {
-    position: absolute;
+    /* position: absolute;
     top: 81px;
-    left: 20px;
+    left: 20px; */
     width: 1350px;
     height:100%;
     background-color:#262627;
@@ -842,66 +858,71 @@ article {
     display:flex;
     flex-direction: column;
     font-size:9pt;
+    width:100%;
+    float:right;
+    margin-left:0px;
+    margin-right:0px;
+    /* padding-right:10px; */
 }
 #pet-body{
-    position:absolute;
+    /* position:absolute;
     top:0px;
-    left:170px;
+    left:170px; */
     height:120px;
     width:150px;
     font-size:10pt;
-    margin-right:10px;
+    /* margin-right:10px; */
     /* padding:10px; */
 }
 #pet-ears{
-    position:absolute;
+    /* position:absolute;
     top:0px;
-    left:325px;
+    left:325px; */
     height:120px;
     width:150px;
     font-size:10pt;
-    margin-right:10px;
+    /* margin-right:10px; */
     /* padding:10px; */
 }
 #pet-nose{
-    position:absolute;
+    /* position:absolute;
     top:0px;
-    left:480px;
+    left:480px; */
     height:120px;
-    width:120px;
+    width:150px;
     font-size:10pt;
-    margin-right:10px;
+    /* margin-right:10px; */
     /* padding:10px; */
 }
 
 #pet-tail{
-    position:absolute;
+    /* position:absolute;
     top:125px;
-    left:170px;
+    left:170px; */
     height:120px;
     width:150px;
     font-size:10pt;
-    margin-right:10px;
+    /* margin-right:10px; */
     /* padding:10px; */
 }
 #pet-spots{
-    position:absolute;
+    /* position:absolute;
     top:125px;
-    left:325px;
+    left:325px; */
     height:120px;
     width:150px;
     font-size:10pt;
-    margin-right:10px;
+    /* margin-right:10px; */
     /* padding:10px; */
 }
 #pet-collar{
-    position:absolute;
+    /* position:absolute;
     top:125px;
-    left:480px;
+    left:480px; */
     height:120px;
-    width:120px;
+    width:150px;
     font-size:10pt;
-    margin-right:10px;
+    /* margin-right:10px; */
 }
     /* padding:10px; */
 /* }
@@ -977,11 +998,12 @@ font-size:10pt;
     font-size:8pt;
 }
 #starshine{
+    width:2000px;
     /* display:none; */
-    top:260px;
-    position:absolute;
-    left:310px;
-    width:420px;
+    /* top:260px;
+    position:absolute; */
+    /* left:310px;
+    width:420px; */
 }
 #dog{
     /* display:none; */
@@ -993,6 +1015,8 @@ font-size:10pt;
     /* display:none; */
     height:290px;
     width:390px;
+    /* margin-left:20px; */
+    margin-top:150px;
 }
 /* #back-home{
     display:none;

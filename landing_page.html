@@ -89,45 +89,44 @@
                   document.getElementById('the-ears').style.display="flex";    }
             </script>
          
-         <div id="pet-css">
-            <!-- <div id="pet-part">&#60;style&#62;</div> -->
-            <div id="pet-body">
+         <!-- <div id="pet-css">
+            <div id="pet-body" onclick="changeBody()" ondblclick="bodyBack()">
                <div id="pet-body-title">Body{</div>
                   <div id="body-type">type:<span id="my-type"> 2</span><span id="semi-colon1">;</span></div>
                   <div id="body-size">size:<span id="my-size"> medium</span><span id="semi-colon2">;</span></div>
                   <div id="body-color">color:<span id="my-color"> turquioise</span><span id="semi-colon3">;</span></div>
                   <div id="body-end">}</div>
             </div>
-            <div id="pet-ears">
+            <div id="pet-ears" onclick="changeEars()" ondblclick="earsBack()">
                <div id="pet-ears-title">Ears{</div>
                   <div id="ear-type">type:<span id="my-ear-type"> 2</span><span id="semi-colon4">;</span></div>
                   <div id="ear-color">color:<span id="my-ear-color"> turquioise</span><span id="semi-colon5">;</span></div>
                   <div id="body-end">}</div>
             </div>
-            <div id="pet-nose">
+            <div id="pet-nose" onclick="changeNose()" ondblclick="noseBack()">
                <div id="pet-nose-title">Nose{</div>
                   <div id="nose-type">type:<span id="my-nose-type"> 3</span><span id="semi-colon6">;</span></div>
                   <div id="nose-color">color:<span id="my-nose-color"> blue</span><span id="semi-colon7">;</span></div>
                   <div id="body-end">}</div>
             </div>
-            <div id="pet-tail">
+            <div id="pet-tail" onclick="changeTail()" ondblclick="tailBack()">
                <div id="pet-tail-title">Tail{</div>
                   <div id="tail-type">type:<span id="my-tail-type"> 3</span><span id="semi-colon8">;</span></div>
                   <div id="tail-color">color:<span id="my-tail-color"> blue</span><span id="semi-colon9">;</span></div>
                   <div id="body-end">}</div>
             </div>
-            <div id="pet-spots">
+            <div id="pet-spots" onclick="changeSpots()" ondblclick="spotsBack()">
                <div id="pet-spots-title">Spots{</div>
                   <div id="spot-type">eyes:<span id="my-spot-type"> right</span><span id="semi-colon10">;</span></div>
                   <div id="spot-color">color:<span id="my-spot-color"> blue</span><span id="semi-colon11">;</span></div>
                   <div id="body-end">}</div>
             </div>
-            <div id="pet-collar">
+            <div id="pet-collar" onclick="changeCollar()" ondblclick="collarBack()">
                <div id="pet-collar-title">Collar{</div>
                   <div id="collar-color">color: <span id="my-collar-color">orange</span><span id="semi-colon12">;</span></div>
                   <div id="body-end">}</div>
             </div>
-         </div>
+         </div> -->
          <a id="back-home" href="index.html">
             <img id="go-home" src="images/earth_dottat.png">
          </a>
@@ -154,15 +153,58 @@
                <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <article id="all">
+                     <div class="run-code">
+                        <div id="pet-css">
+                           <div id="pet-body" onclick="changeBody()" ondblclick="bodyBack()">
+                              <div id="pet-body-title">Body{</div>
+                                 <div id="body-type">type:<span id="my-type"> 2</span><span id="semi-colon1">;</span></div>
+                                 <div id="body-size">size:<span id="my-size"> medium</span><span id="semi-colon2">;</span></div>
+                                 <div id="body-color">color:<span id="my-color"> turquioise</span><span id="semi-colon3">;</span></div>
+                                 <div id="body-end">}</div>
+                           </div>
+                           <div id="pet-ears" onclick="changeEars()" ondblclick="earsBack()">
+                              <div id="pet-ears-title">Ears{</div>
+                                 <div id="ear-type">type:<span id="my-ear-type"> 2</span><span id="semi-colon4">;</span></div>
+                                 <div id="ear-color">color:<span id="my-ear-color"> turquioise</span><span id="semi-colon5">;</span></div>
+                                 <div id="body-end">}</div>
+                           </div>
+                           
+                           <div id="pet-nose" onclick="changeNose()" ondblclick="noseBack()">
+                              <div id="pet-nose-title">Nose{</div>
+                                 <div id="nose-type">type:<span id="my-nose-type"> 3</span><span id="semi-colon6">;</span></div>
+                                 <div id="nose-color">color:<span id="my-nose-color"> blue</span><span id="semi-colon7">;</span></div>
+                                 <div id="body-end">}</div>
+                           </div>
+                           <div id="pet-tail" onclick="changeTail()" ondblclick="tailBack()">
+                              <div id="pet-tail-title">Tail{</div>
+                                 <div id="tail-type">type:<span id="my-tail-type"> 3</span><span id="semi-colon8">;</span></div>
+                                 <div id="tail-color">color:<span id="my-tail-color"> blue</span><span id="semi-colon9">;</span></div>
+                                 <div id="body-end">}</div>
+                           </div>
+                           <div id="pet-spots" onclick="changeSpots()" ondblclick="spotsBack()">
+                              <div id="pet-spots-title">Spots{</div>
+                                 <div id="spot-type">eyes:<span id="my-spot-type"> right</span><span id="semi-colon10">;</span></div>
+                                 <div id="spot-color">color:<span id="my-spot-color"> blue</span><span id="semi-colon11">;</span></div>
+                                 <div id="body-end">}</div>
+                           </div>
+                           <div id="pet-collar" onclick="changeCollar()" ondblclick="collarBack()">
+                              <div id="pet-collar-title">Collar{</div>
+                                 <div id="collar-color">color: <span id="my-collar-color">orange</span><span id="semi-colon12">;</span></div>
+                                 <div id="body-end">}</div>
+                           </div>
+                        </div>
+
+
                         <div id="starshine">
                            <div class="template shine">
                        
                            </div>
                            <div id="dog">
-                             <img id="dog-pic" src="images/makeMyDog.png">
-                       </div>
-
+                             <img id="dog-pic" src="images/dog-blank.png">
+                           </div>
+                        </div>
                      </div>
+                       
              
 					 </article>
 					 <article id="shop">
@@ -210,6 +252,66 @@
          function hideEars(){
             document.getElementById('the-ears').style.display="none";
          }
+      </script>
+      <script>
+         function changeBody(){
+            document.getElementById('dog-pic').src="images/body.png";
+         }
+      </script>
+        <script>
+         function bodyBack(){
+            document.getElementById('dog-pic').src="images/dog-blank.png";
+         }
+      </script>
+         <script>
+            function changeEars(){
+               document.getElementById('dog-pic').src="images/run_b-e.png";
+            }
+         </script>
+         <script>
+         function earsBack(){
+            document.getElementById('dog-pic').src="images/body.png";
+         }
+      </script>
+      <script>
+         function changeNose(){
+            document.getElementById('dog-pic').src="images/run_b-e-n.png";
+         }
+      </script>
+      <script>
+      function noseBack(){
+         document.getElementById('dog-pic').src="images/run_b-e.png";
+      }
+      </script>
+      <script>
+         function changeTail(){
+            document.getElementById('dog-pic').src="images/run_b-e-n-t.png";
+         }
+      </script>
+      <script>
+      function tailBack(){
+         document.getElementById('dog-pic').src="images/run_b-e-n.png";
+      }
+      </script>
+      <script>
+      function changeSpots(){
+         document.getElementById('dog-pic').src="images/run_b-e-n-t-s.png";
+      }
+      </script>
+      <script>
+      function spotsBack(){
+         document.getElementById('dog-pic').src="images/run_b-e-n-t.png";
+      }
+      </script>
+      <script>
+      function changeCollar(){
+         document.getElementById('dog-pic').src="images/makeDog.png";
+      }
+      </script>
+      <script>
+      function collarBack(){
+         document.getElementById('dog-pic').src="images/run_b-e-n-t-s.png";
+      }
       </script>
       <!-- <button id="test-button" onclick="showTestImage()">Testing</button>
       <div id="test-pic"><img id="test-image" src="images/favicon.ico"></div> -->
