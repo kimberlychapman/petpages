@@ -60,10 +60,10 @@
                   <img id="blank-body" src="images/body_css.png" onclick="showBody()" ondblclick="hideBody()"> Body
                </li>
                <li id="link3" class="nav-section3" href="">
-                  <img id="blank-ears" src="images/ears_css.png" onclick="showEars()"> Ears
+                  <img id="blank-ears" src="images/ears_css.png" onclick="showEars()" ondblclick="hideEars()"> Ears
                </li>
                <li id="link4" class="nav-section4" href="">
-                  <img id="blank-nose" src="images/nose_css.png"> Nose
+                  <img id="blank-nose" src="images/nose_css.png" onclick="showNose()" ondblclick="hideNose()"> Nose
                </li>
                <li id="link5" class="nav-section5" href="">
                   <img id="blank-tail" src="images/tail_css.png"> Tail
@@ -87,18 +87,38 @@
                document.querySelector(".ih-item.circle.colored.effect7").style.display="block";
                 }
          </script>
+            <script>
+            function hideBody(){
+               document.querySelector(".ih-item.circle.colored.effect5").style.display="none";
+               document.querySelector(".ih-item.circle.colored.effect6").style.display="none";
+               document.querySelector(".ih-item.circle.colored.effect7").style.display="none";
+                  }
+         </script>
+         <script>
+            function showEars(){
+               document.querySelector(".ih-item.circle.colored.effect8").style.display="block";
+               document.querySelector(".ih-item.circle.colored.effect9").style.display="block";
+                  }
+         </script>
+         <script>
+            function hideEars(){
+               document.querySelector(".ih-item.circle.colored.effect8").style.display="none";
+               document.querySelector(".ih-item.circle.colored.effect9").style.display="none";
+            }
+         </script>
               <script>
-               function hideBody(){
-                  document.querySelector(".ih-item.circle.colored.effect5").style.display="none";
-                  document.querySelector(".ih-item.circle.colored.effect6").style.display="none";
-                  document.querySelector(".ih-item.circle.colored.effect7").style.display="none";
-                   }
+               function showNose(){
+                  document.querySelector(".ih-item.circle.colored.effect10").style.display="block";
+                  document.querySelector(".ih-item.circle.colored.effect11").style.display="block";
+                     }
             </script>
             <script>
-               function showEars(){
-                  document.getElementById('the-ears').style.display="flex";    }
+               function hideNose(){
+                  document.querySelector(".ih-item.circle.colored.effect10").style.display="none";
+                  document.querySelector(".ih-item.circle.colored.effect11").style.display="none";
+               }
             </script>
-         
+
          <!-- <div id="pet-css">
             <div id="pet-body" onclick="changeBody()" ondblclick="bodyBack()">
                <div id="pet-body-title">Body{</div>
@@ -167,39 +187,39 @@
                         <div id="pet-css">
                            <div id="pet-body" onclick="changeBody()" ondblclick="bodyBack()">
                               <div id="pet-body-title">Body{</div>
-                                 <div id="body-type">type:<span id="my-type"> 2</span><span id="semi-colon1">;</span></div>
-                                 <div id="body-size">size:<span id="my-size"> medium</span><span id="semi-colon2">;</span></div>
-                                 <div id="body-color">color:<span id="my-color"> turquioise</span><span id="semi-colon3">;</span></div>
+                                 <div id="body-type">type:<span id="my-type"> 2;</span></div>
+                                 <div id="body-size">size:<span id="my-size"> medium;</span></div>
+                                 <div id="body-color">color:<span id="my-color"> turquioise;</span></div>
                                  <div id="body-end">}</div>
                            </div>
                            <div id="pet-ears" onclick="changeEars()" ondblclick="earsBack()">
                               <div id="pet-ears-title">Ears{</div>
-                                 <div id="ear-type">type:<span id="my-ear-type"> 2</span><span id="semi-colon4">;</span></div>
-                                 <div id="ear-color">color:<span id="my-ear-color"> turquioise</span><span id="semi-colon5">;</span></div>
+                                 <div id="ear-type">type:<span id="my-ear-type"> 2;</span></div>
+                                 <div id="ear-color">color:<span id="my-ear-color"> turquioise;</span></div>
                                  <div id="body-end">}</div>
                            </div>
                            
                            <div id="pet-nose" onclick="changeNose()" ondblclick="noseBack()">
                               <div id="pet-nose-title">Nose{</div>
-                                 <div id="nose-type">type:<span id="my-nose-type"> 3</span><span id="semi-colon6">;</span></div>
-                                 <div id="nose-color">color:<span id="my-nose-color"> blue</span><span id="semi-colon7">;</span></div>
+                                 <div id="nose-type">type:<span id="my-nose-type"> 3;</span></div>
+                                 <div id="nose-color">color:<span id="my-nose-color"> blue;</span></div>
                                  <div id="body-end">}</div>
                            </div>
                            <div id="pet-tail" onclick="changeTail()" ondblclick="tailBack()">
                               <div id="pet-tail-title">Tail{</div>
-                                 <div id="tail-type">type:<span id="my-tail-type"> 3</span><span id="semi-colon8">;</span></div>
-                                 <div id="tail-color">color:<span id="my-tail-color"> blue</span><span id="semi-colon9">;</span></div>
+                                 <div id="tail-type">type:<span id="my-tail-type"> 3;</span></div>
+                                 <div id="tail-color">color:<span id="my-tail-color"> blue;</span></div>
                                  <div id="body-end">}</div>
                            </div>
                            <div id="pet-spots" onclick="changeSpots()" ondblclick="spotsBack()">
                               <div id="pet-spots-title">Spots{</div>
-                                 <div id="spot-type">eyes:<span id="my-spot-type"> right</span><span id="semi-colon10">;</span></div>
-                                 <div id="spot-color">color:<span id="my-spot-color"> blue</span><span id="semi-colon11">;</span></div>
+                                 <div id="spot-type">eyes:<span id="my-spot-type"> right;</span></div>
+                                 <div id="spot-color">color:<span id="my-spot-color"> blue;</span></div>
                                  <div id="body-end">}</div>
                            </div>
                            <div id="pet-collar" onclick="changeCollar()" ondblclick="collarBack()">
                               <div id="pet-collar-title">Collar{</div>
-                                 <div id="collar-color">color: <span id="my-collar-color">orange</span><span id="semi-colon12">;</span></div>
+                                 <div id="collar-color">color: <span id="my-collar-color">orange;</span></div>
                                  <div id="body-end">}</div>
                            </div>
                         </div>
@@ -243,17 +263,8 @@
             <img id="dbc" src="images/color.png">
          </div>
       </div> -->
-      <div id="the-ears">
-         <div id="ears-x" onclick="hideEars()">x</div>
-         <div id="dog-ear-type">
-            <img id="det" src="images/dog-ear-type.png">
-         </div>
-         <div id="dog-ear-color">
-            <img id="dec" src="images/color.png">
-         </div>
-      </div>
 
-         <div class="ih-item circle colored effect5">
+         <div class="ih-item circle colored effect5" onclick="bodyTypeChoice()" ondblclick="bodyTypeClear()">
             <a href="#">
               <div class="img">
                 <img src="images/the_body_type.png" alt="img">
@@ -265,7 +276,7 @@
              </div>
             </a>
           </div>
-       <div class="ih-item circle colored effect6">
+       <div class="ih-item circle colored effect6" onclick="bodySizeChoice()" ondblclick="bodySizeClear()">
          <a href="#">
            <div class="img">
              <img src="images/doggy-size.png" alt="img">
@@ -278,7 +289,59 @@
          </a>
        </div>
 
-       <div class="ih-item circle colored effect7">
+       <div class="ih-item circle colored effect7" onclick="bodyColorChoice()" ondblclick="bodyColorClear()">
+         <a href="#">
+           <div class="img">
+             <img src="images/the_colors.png" alt="img">
+           </div>
+           <div class="info">
+            <div class="info-back">
+              <div id="info-label">Color</div>
+            </div>
+          </div>
+         </a>
+       </div>
+
+       <div class="ih-item circle colored effect8" onclick="earTypeChoice()" ondblclick="earTypeClear()">
+         <a href="#">
+           <div class="img">
+             <img src="images/dog-ears.png" alt="img">
+           </div>
+           <div class="info">
+            <div class="info-back">
+              <div id="info-label">Type</div>
+            </div>
+          </div>
+         </a>
+       </div>
+
+       <div class="ih-item circle colored effect9" onclick="earColorChoice()" ondblclick="earColorClear()">
+         <a href="#">
+           <div class="img">
+             <img src="images/the_colors.png" alt="img">
+           </div>
+           <div class="info">
+            <div class="info-back">
+              <div id="info-label">Color</div>
+            </div>
+          </div>
+         </a>
+       </div>
+
+       <div class="ih-item circle colored effect10" onclick="noseTypeChoice()" ondblclick="noseTypeClear()">
+         <a href="#">
+           <div class="img">
+             <img src="images/dog-noses.png" alt="img">
+           </div>
+           <div class="info">
+            <div class="info-back">
+              <div id="info-label">Type</div>
+            </div>
+          </div>
+         </a>
+       </div>
+
+       <div class="ih-item circle colored effect11" onclick="noseColorChoice()" ondblclick="noseColorClear()">
          <a href="#">
            <div class="img">
              <img src="images/the_colors.png" alt="img">
@@ -297,11 +360,7 @@
          }
       </script> -->
 
-      <script>
-         function hideEars(){
-            document.getElementById('the-ears').style.display="none";
-         }
-      </script>
+
       <script>
          function changeBody(){
             document.getElementById('dog-pic').src="images/body.png";
@@ -361,6 +420,78 @@
       function collarBack(){
          document.getElementById('dog-pic').src="images/run_b-e-n-t-s.png";
       }
+      </script>
+      <script>
+         function bodyTypeChoice(){
+            document.getElementById('my-type').style.color="black";
+         }
+      </script>
+      <script>
+         function bodyTypeClear(){
+            document.getElementById('my-type').style.color="transparent";
+         }
+      </script>
+      <script>
+         function bodySizeChoice(){
+            document.getElementById('my-size').style.color="black";
+         }
+      </script>
+      <script>
+         function bodySizeClear(){
+            document.getElementById('my-size').style.color="transparent";
+         }
+      </script>
+      <script>
+         function bodyColorChoice(){
+            document.getElementById('my-color').style.color="black";
+         }
+      </script>
+      <script>
+         function bodyColorClear(){
+            document.getElementById('my-color').style.color="transparent";
+         }
+      </script>
+
+      <script>
+         function earTypeChoice(){
+            document.getElementById('my-ear-type').style.color="black";
+         }
+      </script>
+      <script>
+         function earTypeClear(){
+            document.getElementById('my-ear-type').style.color="transparent";
+         }
+      </script>
+      <script>
+         function earColorChoice(){
+            document.getElementById('my-ear-color').style.color="black";
+         }
+      </script>
+      <script>
+         function earColorClear(){
+            document.getElementById('my-ear-color').style.color="transparent";
+         }
+      </script>
+
+      <script>
+         function noseTypeChoice(){
+            document.getElementById('my-nose-type').style.color="black";
+         }
+      </script>
+      <script>
+         function noseTypeClear(){
+            document.getElementById('my-nose-type').style.color="transparent";
+         }
+      </script>
+      <script>
+         function noseColorChoice(){
+            document.getElementById('my-nose-color').style.color="black";
+         }
+      </script>
+      <script>
+         function noseColorClear(){
+            document.getElementById('my-nose-color').style.color="transparent";
+         }
       </script>
       <!-- <button id="test-button" onclick="showTestImage()">Testing</button>
       <div id="test-pic"><img id="test-image" src="images/favicon.ico"></div> -->
